@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /nieuws.html
+
+User-agent: *
+Disallow: /over-css.html

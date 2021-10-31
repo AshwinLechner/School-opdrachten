@@ -1,0 +1,58 @@
+body {
+  font-family: Calibri, Verdana, sans-serif;
+  font-size: 20px;
+  background-color: black;
+}
+#container {
+  max-width: 100%;
+  position: relative;
+}
+figure {
+  position: absolute;
+  transform: translate(50px, 50px);
+}
+figure img {
+  border: 5px solid tomato;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.75;
+}
+figure:hover {
+  z-index: 10;
+  transform: matrix(1.2, 0, 0, 1.2, 50, 50);
+}
+figure:active {
+  z-index: 10;
+  transform: matrix(1.2, 0.2, 0.2, 1.2, 50, 50);
+}
+figure:hover img {
+  opacity: 1;
+}
+.grieks {
+  top: 0;
+  left: 0;
+}
+.wokken {
+  top: 150px;
+  left: 200px;
+}
+.pizza {
+  top: 300px;
+  left: 0;
+}
+.mexicaans {
+  top: 450px;
+  left: 200px;
+}
+.sushi {
+  top: 600px;
+  left: 0;
+}
+figure figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px tomato;
+}

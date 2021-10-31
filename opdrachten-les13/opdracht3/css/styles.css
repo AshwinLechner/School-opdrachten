@@ -1,0 +1,19 @@
+html,
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.blokje{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    animation: blokje_animation 4s;
+}
+@keyframes blokje_animation{
+    0%   {background-color:orange; left:0%; top:0%;}
+    25%  {background-color:purple; left: 500px; top:0px; border-radius: 100%;}
+    50%  {background-color:lightseagreen; left: 500px; top: 500px; border-radius: 0%;}
+    75%  {background-color:gray; left:0px; top: 500px; border-radius: 100%;}
+    100% {background-color:orange; left:0px; top:0px; border-radius: 0%;}
+}

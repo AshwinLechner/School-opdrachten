@@ -1,0 +1,35 @@
+#container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.block-1, .block-2, .block-3 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	margin: 20px;
+}
+.block-1 {
+	background-color: khaki;
+	animation: blokje_animation 1s forwards 1 normal linear 1s;
+
+}
+.block-2 {
+	background-color: lightblue;
+	animation: blokje_animation 2s backwards 5 reverse ease-in 1s;
+	
+}
+.block-3 {
+	background-color: lightgreen;
+	animation: blokje_animation 3s none infinite alternate ease-out 1s;
+
+}
+@keyframes blokje_animation{
+	0%{
+		
+	}
+	100%{
+		background-color: red;
+		width: 400px; height: 400px;
+	}
+}

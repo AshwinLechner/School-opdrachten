@@ -1,0 +1,53 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  background-image: linear-gradient(to bottom,
+      lightblue,
+      lightblue 40%,
+      green 40%,
+      green);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.sanic {
+  width: 218px;
+  height: 218px;
+  background: url("../images/sanic.png");
+  position: absolute;
+  top: 300px;
+  transition: top;
+  animation: sonic_run .5s forwards ease-in;
+}
+
+.sanic:active {
+  top: 200px;
+}
+
+@keyframes sonic_run {
+  0% {
+    left: 20px;
+  }
+
+  40% {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: blue;
+  }
+
+  60% {
+    background: url("../images/sanic.png");
+  }
+
+  100% {
+    left: 85%;
+  }
+}

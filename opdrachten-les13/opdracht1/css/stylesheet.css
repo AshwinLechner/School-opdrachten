@@ -1,0 +1,80 @@
+html,
+body {
+  font-family: Verdana, Arial, sans-serif;
+  background-color: khaki;
+  background-image: url("../images/paper.gif");
+  background-repeat: repeat;
+  font-size: 18px;
+}
+#container {
+  background-color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 100px;
+  height: 100px;
+  background-color: mediumseagreen;
+  transition:   line-height 3s;
+}
+header:active{
+  line-height: 250px;
+}
+main {
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+}
+section {
+  padding: 20px;
+  flex: 1;
+}
+section p{
+  transition: font-size 3s, background-color 2s;
+}
+input[type="submit"]{
+  transition: background-color 1s;
+}
+input[type="submit"]:active{
+  background-color: green;
+}
+section p:first-of-type:active,
+section p:nth-of-type(2):active,
+section p:last-of-type:active{
+  font-size: 2rem;
+  color: purple;
+}
+main form label,
+main form input {
+  display: block;
+  margin-bottom: 10px;
+}
+footer {
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  background: linear-gradient(to right, mediumseagreen, royalblue);
+}
+input,
+textarea{
+  transition: background-color ;
+}
+input:hover,
+textarea:hover {
+  background-color: lightblue;
+  transition-delay: 2s;
+}
+input:focus,
+textarea:focus{
+  background-color: lightgreen;
+  transition-delay: 1s;
+}
+@media only screen and (max-width: 760px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
